@@ -1,0 +1,137 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --red: rgb(207, 63, 63);
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url(/images/black.jpg);
+
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+
+/* Header Style */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(/images/black.jpg);
+    padding: 20px 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0px 2px rgba(68, 68, 68, 0.849);
+
+}
+
+#logo {
+    width: 150px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration:none;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.5s ease;
+
+}
+
+#navbar li a:hover {
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+}
+
+.cart {
+    height: 40px;
+}
+
+
+
+
+/* Homepage */
+#hero {
+    background-image: url(/images/banner2.png);
+    
+    background-size:1000px;
+    background-repeat: no-repeat;
+    background-position:140% 0;
+    height: 100vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+#hero h1{
+    color: var(--red);
+}
+
+#hero h2{
+    color: var(--white);
+
+}
+
+#hero p{
+
+    max-width: 550px;
+    justify-content: center;
+    color: rgb(94, 92, 88);
+}
+
+.text {
+    color: var(--red);
+    font-weight: 700;
+    padding: auto;
+}
+#hero button{
+    margin: 20px 0;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px black;
+    background-color: black;
+    color: var(--white);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+#hero button:hover{
+    background-color: rgb(44, 44, 44);
+}
+
